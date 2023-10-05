@@ -1,0 +1,94 @@
+body {
+	max-width: 1140px;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+}
+.en_tete{
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	justify-content: space-between;
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+li:hover {
+	color: #B1663C;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	gap:20px;
+}
+.bloc{
+	display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.input{
+    width: 280px;
+    height: 30px;
+}
+
+.connexion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.connect{
+    height: 30px;
+    border-radius: 25px;
+    background: #1D6154;
+    color: white;
+    font-size: bold;
+}
+
+h2{
+    color: #1D6154;
+}
+a{
+    margin-top: 20px;
+    color:#3D3D3D;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}

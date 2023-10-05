@@ -1,0 +1,225 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .return {
+    color: black;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+  }
+
+/*Modal Body*/
+.modal-body{}
+.modal-gallery{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+h2{
+  font: Work Sans;
+  color: black;
+}
+.photos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;;
+  justify-content: space-between;
+}
+.figureModale{
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.figureModale > img{
+  width: 100%;
+  height: auto;
+  flex: 1;
+  object-fit: cover;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.icon > i {
+  color: white;
+}
+.figureModale > figcaption{
+  height: 30px;
+}
+.underline{
+  height: 2px;
+  width: 420px;
+  background-color: #B3B3B3;
+}
+.add{
+  width: 30%;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #1D6154;
+  color: white;
+  font: inherit
+}
+.delete{
+  background: none;
+  color: red;
+}
+
+/* modale d'ajout */
+.modal-ajout{
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.image{
+  background-color: #E8F1F6;
+  width: 420px;
+  height: 170px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formImage{
+  display: flex;/* mettre cette valeur en none pour cacher le formulaire et en flex */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.fa-image{
+  font-size: 70px;
+  color: gray;
+}
+.ajouter{
+  color: #306685;
+  background-color: #CBD6DC;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+.file{
+  display: none;
+}
+.formImage > p{}
+.previewImage{
+  display: none;/* mettre cette valeur en none pour cacher le formulaire et en flex */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.imageSeletionne{
+  height: 100%;
+  object-fit: cover;
+}
+.remove{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.titre{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  
+}
+.titre > input{
+  width: 420px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+.categorie{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+#categorie{
+  width: 420px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+.optionCategorie{
+  width: 420px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+  background-color: white;
+  color: black;
+}
+#addProject{
+  /*Quand je n'ai rien sélectionné*/
+  width: 30%;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #B3B3B3;
+  color: white;
+  font: inherit;
+}
+#addProject:hover{
+  
+  background-color: #1D6154;
+  color: white;
+ 
+}
